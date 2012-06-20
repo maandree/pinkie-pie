@@ -1,0 +1,8 @@
+fortune | ponypipe
+
+Dependencies:
+    fortune-mod
+    # or 'fortune', available in probabily all distro.'s package repositories
+    
+    ponypipe
+    # available on my github account: https://github.com/maandree/ponypipe
