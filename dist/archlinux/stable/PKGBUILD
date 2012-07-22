@@ -9,6 +9,8 @@ license=('Public Domain')
 depends=('fortune-mod' 'ponypipe')
 provides=('pinkie-pie')
 conflicts=('pinkie-pie')
+source=(src.tar.xz)
+md5sums=(1ab796afb70a2a25ae56fbf258b2dcd7)
 
 build() {
   cd "$srcdir"
