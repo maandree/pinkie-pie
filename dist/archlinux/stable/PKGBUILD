@@ -1,0 +1,20 @@
+# Maintainer: Mattias Andrée <maandree@operamail.com>
+pkgname=pinkie-pie
+pkgver=1
+pkgrel=1
+pkgdesc="Madam Pinkie Pie: ponified fortune cookies"
+arch=('any')
+url="https://github.com/maandree/pinkie-pie"
+license=('Public Domain')
+depends=('fortune-mod' 'ponypipe')
+provides=('pinkie-pie')
+conflicts=('pinkie-pie')
+
+build() {
+  cd "$srcdir"
+}
+
+package() {
+  cd "$srcdir"
+  make DESTDIR="$pkgdir/" install
+}
