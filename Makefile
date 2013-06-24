@@ -1,7 +1,10 @@
+PREFIX=/usr
+BIN=/bin
+
 install:
-	install -d "${DESTDIR}/usr/bin"
-	install -m 755 pinkie pinkiepie "${DESTDIR}/usr/bin"
+	install -d "${DESTDIR}$(PREFIX)$(BIN)"
+	install -m 755 pinkie pinkiepie "${DESTDIR}$(PREFIX)$(BIN)"
 
 uninstall:
-	unlink "${DESTDIR}/usr/bin/pinkie"
-	unlink "${DESTDIR}/usr/bin/pinkiepie"
+	-rm -- "${DESTDIR}$(PREFIX)$(BIN)/pinkie"
+	-rm -- "${DESTDIR}$(PREFIX)$(BIN)/pinkiepie"
