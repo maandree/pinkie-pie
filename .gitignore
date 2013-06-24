@@ -1,0 +1,10 @@
+_/
+\#*\#
+.*
+!.git*
+*~
+*.bak
+*.sw[op]
+/dist/
+!/dist/*/*/PKGBUILD
+
