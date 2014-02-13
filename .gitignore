@@ -7,4 +7,5 @@ _/
 *.sw[op]
 /dist/
 !/dist/*/*/PKGBUILD
+*.info
 

@@ -1,0 +1,71 @@
+\input texinfo   @c -*-texinfo-*-
+
+@c %**start of header
+@setfilename pinkie-pie.info
+@settitle pinkie-pie
+@afourpaper
+@documentencoding UTF-8
+@documentlanguage en
+@finalout
+@c %**end of header
+
+
+@dircategory Miscellaneous
+@direntry
+* pinkie-pie: (pinkie-pie).        Madame Pinkie Pie, the fortune teller pony
+@end direntry
+
+
+@copying
+Copyright @copyright{} 2014 Mattias Andrée
+
+@quotation
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.  This file is offered as-is,
+without any warranty.
+@end quotation
+@end copying
+
+@ifnottex
+@node Top
+@top pinkie-pie -- Madame Pinkie Pie, the fortune teller pony
+@insertcopying
+@end ifnottex
+
+@titlepage
+@title pinkie-pie
+@subtitle Madame Pinkie Pie, the fortune teller pony
+@author by Mattias Andrée (maandree)
+
+@page
+@vskip 0pt plus 1filll
+@insertcopying
+@page
+@*@*
+@center `Do you like my mystical orb of faith's destiny?'
+@end titlepage
+
+@contents
+
+
+
+@menu
+* Overview::                        Brief overview of @command{pinkie-pie}.
+@end menu
+
+
+
+@node Overview
+@chapter Overview
+
+The synonymous commands @command{pinkie} and @command{pinkiepie}
+are simple scripts that combine @command{fortune} and @command{ponypipe}.
+This gives you ponified fortune cookies. These commands [@command{pinkie}
+and @command{pinkiepie}] do not have any options themself, rather, any
+option used when invoking them is passed onto @command{fortune}. So,
+for example if you want ponified fortune cookies that may be offensive,
+you can run @command{pinkie -a}.
+
+@bye
+
