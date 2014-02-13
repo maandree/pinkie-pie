@@ -1,5 +1,7 @@
 fortune | ponypipe
 
+Any argument passed to pinkiepie is passed fortune
+
 Dependencies:
     fortune-mod
     # or 'fortune', available in probabily all distro.'s package repositories
