@@ -1,13 +1,13 @@
 # Maintainer: Mattias Andrée <`base64 -d`(bWFhbmRyZWUK)@member.fsf.org>
 
 pkgname=pinkie-pie-git
-pkgver=20121116
+pkgver=20140213
 pkgrel=1
 pkgdesc="Madame Pinkie Pie: ponified fortune cookies"
 arch=('any')
 url="https://github.com/maandree/pinkie-pie"
 license=('Public Domain')
-depends=('fortune-mod' 'ponypipe')
+depends=('fortune-mod' 'ponypipe' 'sh')
 makedepends=('git')
 provides=('pinkie-pie')
 conflicts=('pinkie-pie')
@@ -32,6 +32,7 @@ build() {
   rm -rf "$srcdir/$_gitname-build"
   git clone "$srcdir/$_gitname" "$srcdir/$_gitname-build"
   cd "$srcdir/$_gitname-build"
+  make
 }
 
 package() {
