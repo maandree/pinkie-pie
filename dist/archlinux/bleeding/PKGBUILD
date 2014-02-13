@@ -3,7 +3,7 @@
 pkgname=pinkie-pie-git
 pkgver=20121116
 pkgrel=1
-pkgdesc="Madam Pinkie Pie: ponified fortune cookies"
+pkgdesc="Madame Pinkie Pie: ponified fortune cookies"
 arch=('any')
 url="https://github.com/maandree/pinkie-pie"
 license=('Public Domain')
