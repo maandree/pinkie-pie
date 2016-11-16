@@ -5,7 +5,5 @@ _/
 *~
 *.bak
 *.sw[op]
-/dist/
-!/dist/*/*/PKGBUILD
 *.info
 
